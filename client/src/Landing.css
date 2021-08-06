@@ -1,0 +1,45 @@
+.landing {
+    top: 78px;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.get-started {
+    font-size: 20px;
+}
+
+.tip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tip > p {
+    margin: 8px 0;
+}
+
+.tip > h2 {
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+li {
+    padding: 8px;
+}
+  
+button {
+    background-color: #43A047;
+    border: none;
+    color: #fafafa;
+    padding: 4px 16px;
+    height: 46px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}

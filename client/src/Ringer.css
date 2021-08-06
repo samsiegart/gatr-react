@@ -1,0 +1,56 @@
+button {
+    background-color: #43A047;
+    border: none;
+    color: #fafafa;
+    padding: 4px 16px;
+    height: 46px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.decline-button {
+    background-color: #AF4C50;
+}
+
+.dialer, .ringer {
+    margin-top: 8px;
+}
+
+.dialer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dialer-announce {
+    margin: 8px;
+}
+
+.input, .ringer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text] {
+    background-color: #e8f5e9;
+    border: 2px solid #43A047;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 256px;
+    padding: 12px 24px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+  
+input[type=text]:focus {
+    outline: none;
+}
+
+.caller-info {
+    font-weight: 500;
+    font-size: 21px;
+    padding-right: 16px;
+}

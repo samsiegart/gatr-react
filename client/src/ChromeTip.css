@@ -1,0 +1,48 @@
+.chrome-tip {
+    top: 78px;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+    display: flex;
+    align-items: center;
+    color: lightgreen;
+    text-decoration: none;
+}
+
+.tip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tip > p {
+    margin: 8px 0;
+}
+
+.tip > h2 {
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+.permission-help,
+.permission-help:link,
+.permission-help:visited,
+.permission-help:active,
+.permission-help:hover {
+    padding: 0px;
+    color: #43A047;
+    display: inline;
+}
+
+.green-accent {
+    color: #43A047;
+}
