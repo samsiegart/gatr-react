@@ -1,0 +1,18 @@
+.toast {
+    position: fixed;
+    padding: 8px;
+    background-color: #43A047;
+    border-radius: 8px;
+    color: #fafafa;
+    left: 16px;
+    bottom: 16px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+}
+  
+.toast.fade {
+    transition: opacity 1.2s;
+}
+
+.fade {
+    opacity: 0;
+}

@@ -1,26 +1,18 @@
 import './RemoteBox.css';
+import { useRef, useEffect } from 'react';
 
-function RemoteBox() {
+function RemoteBox({peerMediaStream}) {
+    const remoteVideo = useRef(null);
+
+    useEffect(() => {
+        if (peerMediaStream === null) return;
+        remoteVideo.current.srcObject = peerMediaStream;
+        remoteVideo.current.play();
+    }, [peerMediaStream]);
+
     return (
         <div className="remote-box" id="remote-box">
-            <video autoplay className="remote-video" id="remote-video"></video>
-            <div className="remote-panel fade" id="remote-panel">
-                <a href="#" id="view-fullscreen">
-                <i className="material-icons">fullscreen</i>
-                </a>
-                <a href="#" id="mute-remote">
-                <i className="material-icons" id="mute-remote-icon">volume_up</i>
-                </a>
-            </div>
-            <div className="thumbnail-toggle fade" id="thumbnail-toggle">
-                <a href="#"
-                    className="thumbnail-toggle-link"
-                    id="thumbnail-toggle-link">
-                <i className="material-icons" id="thumbnail-toggle-icon">
-                    keyboard_arrow_right
-                </i>
-                </a>
-            </div>
+            <video autoplay className="remote-video" ref={remoteVideo}></video>
         </div>
     );
 }

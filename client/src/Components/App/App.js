@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../Header/Header';
 import Landing from '../Landing/Landing';
 import ChromeTip from '../ChromeTip/ChromeTip';
@@ -14,9 +14,16 @@ const uiFlowStates = {
 function App() {
   const [uiFlowState, setUiFlowState] = useState(uiFlowStates.WELCOME);
 
-  if (mobileAndTabletCheck() && uiFlowState !== uiFlowStates.HELP) {
-    setUiFlowState(uiFlowStates.HELP);
-  }
+  useEffect(() => {
+    if (mobileAndTabletCheck() && uiFlowState !== uiFlowStates.HELP) {
+      setUiFlowState(uiFlowStates.HELP);
+    }
+
+    if (window.location.hash.length > 1)  {
+      setUiFlowState(uiFlowStates.GET_STARTED);
+    }
+
+  }, []);
 
   let view; 
   switch (uiFlowState) {
