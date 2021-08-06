@@ -1,0 +1,24 @@
+.my-controls {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    bottom: 0px;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.4s;
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,0.8));
+    width: 100%
+}
+
+.left-controls, .right-controls {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    padding: 8px;
+}
+
+.hang-up > i {
+    color: red;
+}

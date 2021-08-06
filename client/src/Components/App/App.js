@@ -1,9 +1,9 @@
 import './App.css';
 import { useState } from 'react';
-import Header from './Header.js';
-import Landing from './Landing.js';
-import ChromeTip from './ChromeTip.js';
-import Chat from './Chat.js';
+import Header from '../Header/Header';
+import Landing from '../Landing/Landing';
+import ChromeTip from '../ChromeTip/ChromeTip';
+import Chat from '../Chat/Chat';
 
 const uiFlowStates = {
   WELCOME: "welcome",

@@ -1,0 +1,17 @@
+.thumbnail {
+    border: 2px solid #43A047;
+    background-color: black;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    transition: right 0.4s, width 0.4s, height 0.4s;
+}
+
+.thumbnail.active-call .my-panel {
+    display: none;
+}

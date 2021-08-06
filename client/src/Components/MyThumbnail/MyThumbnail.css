@@ -1,0 +1,68 @@
+.my-thumbnail {
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.my-panel {
+    top: 0px;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0.4));
+    width: 100%
+}
+
+.my-controls {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    bottom: 0px;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.4s;
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,0.8));
+    width: 100%
+}
+
+.username {
+    color: lightgreen;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.inviter {
+    color: lightgreen;
+}
+
+.instruction {
+    color: #fafafa;
+    padding: 8px;
+    padding-top: 0px;
+}
+
+.instruction a {
+    display: inline;
+    padding: 0;
+}
+
+.instruction i {
+    vertical-align: middle;
+}
+
+.local-video {
+    height: 100%;
+    width: 100%;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
