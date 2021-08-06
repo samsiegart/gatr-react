@@ -21,6 +21,7 @@
   bottom: 8px;
   right: 8px;
   width: 180px;
+  z-index: 1;
 }
 
 .thumbnail.active-call.collapsed {
